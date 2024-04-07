@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 24px;
+    background-image: url(./blob-scene-haikei.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000;
+    animation: rotate 6s infinite alternate linear;
+}
+
+html,
+body,
+.wrapper {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-card {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    margin: 0 20px;
+    padding: 70px 30px 44px;
+    border-radius: 1.25rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.login-card h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0 0 12px;
+    color: hsl(0, 0%, 24%);
+}
+
+.login-card h3 {
+    color: rgba(0, 0, 0, 0.38);
+    margin: 0 0 30px;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 1rem;
+}
+
+.login-fom {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    gap: 16px;
+}
+
+.login-fom>input,
+.login-fom>button {
+    width: 100%;
+    height: 35px;
+}
+
+.login-fom>input {
+    border: 2px solid #ebebeb;
+    font-family: inherit;
+    font-size: 15px;
+    padding: 0 16px;
+    border-radius: .5rem;
+    transition: all 0.36s ease;
+    outline: none;
+}
+
+.login-fom>input:hover {
+    border: 2px solid rgba(16, 69, 154, 0.651);
+}
+
+.login-fom>button {
+    cursor: pointer;
+    width: 100%;
+    padding: 0 16px;
+    border-radius: .5rem;
+    background-color: hsl(221, 100%, 50%);
+    color: #f9f9f9;
+    border: 0;
+    font-family: inherit;
+    font-size: .9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .9px;
+    transition: all 0.37s ease;
+}
+
+.login-fom>button:hover {
+    background-color: hsl(221, 100%, 38%);
+}
+
+.login-fom a {
+    color: hsl(221, 100%, 50%);
+    font-size: 0.9rem;
+    text-align: left;
+    text-decoration: none;
+    margin-bottom: 6px;
+    transition: all 0.37px;
+}
+
+.login-fom a:hover {
+    color: hsl(221, 96%, 11%);
+}
+
+@keyframes rotate {
+    100% {
+        background-position: 15% 50%;
+    }
+}
+
+@media (width >=500px) {
+    body {
+        padding: 0;
+    }
+
+    .login-card {
+        margin: 0;
+        width: 400px;
+    }
+}
